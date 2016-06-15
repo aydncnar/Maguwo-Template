@@ -1,0 +1,483 @@
+@import "animate.css"
+
+$font-main: 'Raleway', sans-serif
+$font-second: 'Rockwell', sans-serif
+
+$color-first: #202242
+$color-second: #ffe13e
+
+.bg-first
+	background-color: #202242
+
+.bg-second
+	background-color: #ffe13e	
+
+.z-fix
+	position: relative
+	z-index: 999
+
+header
+	.row
+		.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12
+			padding: 0
+
+
+/*header begin*/
+header
+	height: 148px
+	background-color: #ffffff
+	.logo
+		padding-top: 60px 
+	.menu-toggle
+		padding-right: 15px
+		cursor: pointer
+		@extend .z-fix
+	nav.main
+		padding-top: 72px 
+		ul
+			display: flex
+			justify-content: space-around
+			li
+				list-style: none
+				a
+					text-transform: uppercase
+					font-family: $font-main
+					font-size: 16px
+					color: $color-first
+					&:hover
+						opacity: .6
+						text-decoration: none
+				a.active
+					color: $color-second
+					font-weight: bold	
+					font-family: $font-main
+	.chat-title
+		font-family: $font-main
+		font-size: 12px
+		font-weight: 600
+		padding-top: 42px
+	.chat-wrap
+		display: flex
+		justify-content: space-around	
+		align-items: center
+		padding-top: 25px 
+		.btn-chat
+			height: 41px
+			width: 122px
+			background-color: $color-second
+			color: $color-first
+			text-align: center
+			line-height: 41px
+			font-family: $font-main
+			font-size: 14px
+			font-weight: 600	
+			border: none
+			cursor: pointer	
+			&:hover
+				-webkit-animation: pulse .7s
+				animation: pulse .7s						
+		.divider
+			width: 1px
+			height: 34px
+			background-color: #babbc4
+		.phone-number
+			font-family: #font-main
+			font-size: 24px
+			color: $color-first
+/*header end*/			
+
+/*section banner begin*/
+section#banner
+	min-height: 794px
+	/*background-image: url('../images/home-banner.png')*/
+	background-size: cover
+	.banner-title
+		font-family: $font-second
+		color: #ffffff
+		font-size: 45px
+		padding-top: 235px
+	.banner-desc
+		font-family: $font-main
+		font-size: 30px
+		color: #ffffff	
+		padding-top: 45px
+	.banner-icon
+		padding-top: 54px
+	.domain-search-wrap
+		width: 570px
+		height: 91px
+		background-color: #dddddd
+		margin: 60px auto auto auto
+		.domain-search-form
+			padding-top: 18px
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			.txt-domain
+				height: 54px
+				width: 275px
+				border: none
+				outline: none
+				padding: 20px
+				font-family: $font-main
+				font-size: 18px
+			.slct-domain
+				.select-item
+					height: 54px
+					width: 111px
+					background-color: $color-second
+					font-family: $font-main
+					font-weight: bold
+					font-size: 18px
+					line-height: 54px
+					cursor: pointer
+					&::after
+						content: ""
+						font-family: FontAwesome
+						content: " \f078 "			
+						color: #fff
+						text-align: right
+				.items
+					@extend .z-fix
+					display: none
+					li
+						list-style: none
+						background-color: $color-second
+						border-top: 1px solid #fff
+						font-family: $font-main
+						font-size: 14px
+						padding: 5px
+						text-align: center
+						cursor: pointer
+			.divider
+				height: 54px
+				width: 1px
+				background-color: #fff
+			.btn-check
+				height: 54px
+				width: 154px
+				background-color: $color-second
+				font-family: $font-main
+				font-size: 14px		
+				font-weight: 600		
+				color: #fff
+				line-height: 54px
+				cursor: pointer
+				border: none
+					
+/*section banner end*/
+
+
+/*services begin*/
+
+section#services
+	//display: flex
+	.services-item
+		float: left
+		width: 50%
+		min-height: 655px
+		.img
+			height: 286px
+		.service-title
+			font-family: $font-main
+			font-size: 36px
+			font-weight: bold
+			padding-top: 55px
+			color: #fff
+		.service-desc
+			font-family: $font-main
+			font-size: 14px
+			padding-top: 55px
+			color: #fff	
+			padding-top: 27px		
+			padding-bottom: 36px
+		.btn-service
+			@extend .z-fix
+			border: 3px solid #fff
+			height: 58px
+			width: 155px
+			text-align: center
+			line-hight: 58px
+			font-family: $font-main
+			font-size: 18px
+			font-weight: bold	
+			background-color: transparent
+			color: #fff	
+			transition: all .4s ease-in-out
+			&:hover
+				background-color: rgba(255,255,255,.3)
+				color: #e2e2e2
+				border: 3px solid transparent
+			/*padding-top: 36px	*/
+
+/*services end*/
+
+/*features begin*/
+
+section#features
+	clear: both
+	width: 100%
+	min-height: 704px
+	background-image: url("../images/features-bg.png")
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	.title
+		font-family: $font-main
+		color: $color-first
+		padding-top: 67px 
+		h1
+			font-size: 48px
+			font-weight: bold
+		h2
+			font-size: 24px
+	.feature
+		img 
+		margin-top: 88px
+		.divider
+			clear: both
+			width: 70px
+			height: 5px
+			background-color: #8d8d99
+			margin: 35px auto auto auto
+		h1
+			color: $color-second
+			padding-top: 32px
+			font-family: $font-second
+			font-size: 30px	
+		span
+			color: $color-first
+			padding-top: 30px
+			font-size: 14px
+			font-family: $font-main
+/*features end*/
+
+
+/*clients begin*/
+section#clients
+	.title
+		padding-top: 85px
+		h1
+			font-family: $font-main
+			color: $color-first
+			font-size: 36px
+			font-weight: bold
+			padding-bottom: 30px
+		span
+			font-family: $font-main
+			color: #adadad
+			font-size: 16px
+	.img
+		padding-top: 98px
+	.comments
+		margin-top: 78px
+		margin-bottom: 110px
+		.comment-wrap
+			background-color: #faf9f9
+			padding: 30px 22px
+			.comment 
+				font-family: font-second
+				font-style: italic
+				font-weight: 500
+				font: 14px
+				color: #abaaaa
+			.name
+				font-family: $font-main
+				font-size: 16px
+				font-weight: bold
+				color: #696969
+				padding-top: 25px 
+			.photo
+				position: absolute
+				bottom: -45px
+				right: 30px
+				width: 90px
+				height: 90px
+				img
+					width: 100%
+					height: 100%
+					border-radius: 50%
+					border: 5px solid #f2f1f2
+/*clients end/
+
+
+/*footer top begin*/
+
+section#footer-top
+	background-color: $color-first
+	h1
+		font-size: 36px
+		color: #fff
+		font-family: $font-main
+		padding-top: 100px
+		padding-bottom: 20px
+	p
+		color: #67687b
+		font-size: 18px
+		font-family: $font-main
+		padding-bottom: 110px
+	button
+		width: 225px
+		height: 80px
+		background-color: $color-second
+		color: $color-first
+		text-align: center
+		line-height: 80px
+		border: 4px solid #fff
+		font-family: $font-main
+		font-weight: bold
+		font-size: 18px
+		margin-top: 95px
+
+
+/*footer top end*/
+
+
+/*footer begin*/
+footer
+	position: relative
+	height: 657px
+	background-image: url('../images/footer.png')
+	background-size: cover
+	h3
+		font-size: 18px
+		font-weight: bold
+		font-family: $font-main
+		padding-top: 130px
+		color: #fff
+	nav#footer-nav
+		padding-top: 20px
+		ul 
+			float: right
+			li
+				list-style: none
+				border-bottom: 1px solid #565870
+				padding: 10px
+				width: 75px
+				text-align: right
+				a 
+					display: box
+					color: #fff
+					font-size: 16px
+					font-family: $font-main
+			li:last-child
+				border-bottom: none
+	nav#social-nav
+		margin-top: 45px
+		float: right
+		ul 
+			li 
+				padding-right: 23px
+				float: left		
+				list-style: none
+				a 
+					color: $color-second
+					font-size: 16px
+					padding: 5px
+					border-radius: 2px
+					&:hover
+						color: $color-first
+						background-color: $color-second
+			li:last-child
+				padding-right: 0	
+	.top 
+		padding-top: 67px
+		a 
+			font-size: 12px
+			font-family: $font-main					
+			color: #fff
+	.sign
+		position: absolute
+		bottom:  70px
+		left: 40%
+		text-align: center
+		p
+			padding-top: 20px
+			font-size: 14px
+			color: #fff
+			font-family: $font-main
+
+/*footer end*/
+
+
+@media screen and (max-width: 992px)
+	/*header begin*/
+	header
+		height: 100px
+		background-color: #ffffff
+		.logo
+			padding-top: 20px 
+			padding-left: 15px
+		.menu-toggle
+			position: absolute
+			top: -25px
+			right: 0px
+			cursor: pointer
+		nav.main
+			padding-top: 72px 
+			background-color: rgba(255,255,255,.6)
+			width: 100%
+			height: 100%
+			display: none
+			ul
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				li
+					list-style: none
+					padding: 10px
+					margin-bottom: 5px
+					margin-right: 30px
+					border: 1px solid $color-first
+					text-aling: center
+					a
+						text-transform: uppercase
+						font-family: $font-main
+						font-size: 16px
+						color: $color-first
+						&:hover
+							opacity: .6
+							text-decoration: none
+					a.active
+						color: $color-second
+						font-weight: bold	
+						font-family: $font-main
+		.chat-title
+			font-family: $font-main
+			font-size: 12px
+			font-weight: 600
+			padding-top: 42px
+		.chat-wrap
+			display: flex
+			justify-content: space-around	
+			align-items: center
+			padding-top: 25px 
+			.btn-chat
+				height: 41px
+				width: 122px
+				background-color: $color-second
+				color: $color-first
+				text-align: center
+				line-height: 41px
+				font-family: $font-main
+				font-size: 14px
+				font-weight: 600	
+				border: none
+				cursor: pointer
+			.divider
+				width: 1px
+				height: 34px
+				background-color: #babbc4
+			.phone-number
+				font-family: #font-main
+				font-size: 24px
+				color: $color-first
+	/*header end*/
+	section#banner
+		.domain-search-wrap
+			width: 100%
+			.domain-search-form
+				.txt-domain		
+					width: 180px	
+	section#services
+		.services-item
+			width: 100%
