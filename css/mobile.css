@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+	section#clients .comments .comment-wrap{
+		margin-bottom: 100px;
+	}
+
+	section#footer-top{
+		text-align: left !important;
+	}
+
+	section#footer-top .btn-container{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		margin: -175px auto 25px auto !important;
+	}
+
+  	footer .top {
+    	padding-top: 100px; 
+    }
+}
