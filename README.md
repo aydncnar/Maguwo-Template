@@ -2,4 +2,4 @@
 
 Css önişlemci olarak Sass kullanılmıştır.
 
-Not: Bazı bölümler için mobil sürüm uyumlulukları henüz tamamlanmadı.
+.
